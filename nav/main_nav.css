@@ -1,7 +1,7 @@
 .navbar-default {background-color: #cf63fc;
 				/*background-image: none;
 				background-repeat: no-repeat;*/
-				border-color:#c35ded;
+				border-color:#AA51CF;
 				border-radius: 4px;
 				background-image: -webkit-gradient(linear, left 0%, left 100%, from(#c35ded), to(#cf63fc));
 				background-image: -webkit-linear-gradient(top, #c35ded, 0%, #cf63fc, 100%);
@@ -11,10 +11,14 @@
   				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc35ded', endColorstr='#ffcf63fc', GradientType=0);
 }
 
-.navbar-default .navbar-nav > li > .divider-vertical {
-background-color:#c35ded;
-background-image: none;	
-border-left: 1px;
+/*border aftter last menu element*/
+.navbar-default .navbar-nav > li:last-child > a {
+  border-right: 1px solid #AA51CF;
+}
+
+/*border between menu elements*/
+.navbar-default .navbar-nav > li > a {
+  border-left: 1px solid #AA51CF;
 }
 
 
