@@ -108,7 +108,10 @@ background-color: #b054d6;
 
 .pull-right> input {margin-top:10px;
                     margin-bottom:5px;
-                    margin-right:5px;}
+                    margin-right:5px;
+		}
+                    
+.pull-left {margin-left: 5px;}
 
 .search-query {border-radius: 6px;}
 
