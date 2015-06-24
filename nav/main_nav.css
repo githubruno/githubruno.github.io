@@ -10,16 +10,15 @@
   				background-repeat: repeat-x;
   				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc35ded', endColorstr='#ffcf63fc', GradientType=0);
 }
-
-/*border aftter last menu element*/
+/*border aftter last menu element
 .navbar-default .navbar-nav > li:last-child > a {
   border-right: 1px solid #AA51CF;
 }
 
-/*border between menu elements*/
+border between menu elements
 .navbar-default .navbar-nav > li > a {
   border-left: 1px solid #AA51CF;
-}
+}*/
 
 
 .navbar-default .navbar-nav > li > a {
