@@ -15,6 +15,40 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="main_nav.css">
+	<script type="text/javascript">
+		$(	//
+			//	So, once all needed parts of the page are loaded, this function
+			//	would be called by browser:
+			//
+			function() {
+				// Let's find (and save into variable) all LIs inside #navbarCollapse
+				// excluding dividers (not that really needed but OTOH dividers can be
+				// hardly clicked anyways):
+				$all_LIs = $('#navbarCollapse li')	// this is all_LIsector for "all LIs"
+				.not('.divider-vertical')	// ...excluding dividers
+				.find('a')			// ...all A's
+				;
+
+				if (0 == $all_LIs.length) {
+					// Debuging: if no LIs were found, let's have an alert
+					// so we know that something went wrong. Wouldn't be needed
+					// when development is over, kept for now.
+					alert('0');
+				}
+
+				// For all previously all_LIsected objects set this function as
+				// handler of "click" event:
+				$all_LIs.on('click', function() {
+					// Find all active LIs and remove active:
+					$('#navbarCollapse li.active').removeClass('active');
+
+					// For current "on-click" generating object (referred as "this")
+					// find it's li-parent and add class "active" to it:
+					$(this).parent('li').addClass('active');
+				});
+			}
+		);
+	</script>
 </head>
 <body class="scroll">
 	<nav class="navbar navbar-default navbar-fixed-top">
