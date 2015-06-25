@@ -1,127 +1,140 @@
-.navbar-default {background-color: #cf63fc;
-				/*background-image: none;
-				background-repeat: no-repeat;*/
-				border-color:#AA51CF;
-				border-radius: 4px;
-				background-image: -webkit-gradient(linear, left 0%, left 100%, from(#c35ded), to(#cf63fc));
-				background-image: -webkit-linear-gradient(top, #c35ded, 0%, #cf63fc, 100%);
-  				background-image: -moz-linear-gradient(top, #c35ded 0%, #cf63fc 100%);
-  				background-image: linear-gradient(to bottom, #c35ded 0%, #cf63fc 100%);
-  				background-repeat: repeat-x;
-  				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc35ded', endColorstr='#ffcf63fc', GradientType=0);
+.navbar-default {
+	background-color:	#cf63fc;
+	/*background-image:	none;
+	background-repeat:	no-repeat;
+	*/
+	border-color:		#AA51CF;
+	border-radius:		4px;
+	background-image:	-webkit-gradient(linear, left 0%, left 100%, from(#c35ded), to(#cf63fc));
+	background-image:	-webkit-linear-gradient(top, #c35ded, 0%, #cf63fc, 100%);
+	background-image:	-moz-linear-gradient(top, #c35ded 0%, #cf63fc 100%);
+	background-image:	linear-gradient(to bottom, #c35ded 0%, #cf63fc 100%);
+	background-repeat:	repeat-x;
+	filter:			progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc35ded', endColorstr='#ffcf63fc', GradientType=0);
 }
-/*границы съезжают при мобильной версии
+
+/* границы съезжают при мобильной версии
 
 /*border aftter last menu element
 .navbar-default .navbar-nav > li:last-child > a {
-  border-right: 1px solid #AA51CF;
+	border-right:		1px solid #AA51CF;
 }
 
 /*border between menu elements
 .navbar-default .navbar-nav > li > a {
-  border-left: 1px solid #AA51CF;
+	border-left:		1px solid #AA51CF;
 }
 */
 
-
 .navbar-default .navbar-nav > li > a {
-color: #f3e1ff;
+	color:			#f3e1ff;
 }
 
 .navbar-default .navbar-nav > li > a:hover, 
 .navbar-default .navbar-nav > li > a:focus {
-color: #ccbdd6;
-background-color: transparent;
+	color:			#ccbdd6;
+	background-color:	transparent;
 }
 
 .navbar-default .navbar-nav > li > .dropdown-menu {
-background-color: #cf63fc;
-background-image: none;
+	background-color:	#cf63fc;
+	background-image:	none;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-color: #f3e1ff;
-background-image: none;
+	color:			#f3e1ff;
+	background-image:	none;
 }
 
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-color: #ccbdd6;
-background-color: #b054d6;
-background-image: none;
+	color:			#ccbdd6;
+	background-color:	#b054d6;
+	background-image:	none;
 }
 
 .navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
-background-color: #c35ded;
+	background-color:	#c35ded;
 }
 
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
-color: #ccbdd6;
-background-color: #b054d6;
-background-image: -webkit-gradient(linear, left 0%, left 100%, from(#c35ded), to(#b054d6));
-				background-image: -webkit-linear-gradient(top, #c35ded, 0%, #b054d6, 100%);
-  				background-image: -moz-linear-gradient(top, #c35ded 0%, #b054d6 100%);
-  				background-image: linear-gradient(to bottom, #c35ded 0%, #b054d6 100%);
-  				background-repeat: repeat-x;
-  				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc35ded', endColorstr='#ffb054d6', GradientType=0);
+	color:			#ccbdd6;
+	background-color:	#b054d6;
+	background-image:	-webkit-gradient(linear, left 0%, left 100%, from(#c35ded), to(#b054d6));
+	background-image:	-webkit-linear-gradient(top, #c35ded, 0%, #b054d6, 100%);
+	background-image:	-moz-linear-gradient(top, #c35ded 0%, #b054d6 100%);
+	background-image:	linear-gradient(to bottom, #c35ded 0%, #b054d6 100%);
+	background-repeat:	repeat-x;
+	filter:			progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc35ded', endColorstr='#ffb054d6', GradientType=0);
 }
 
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:hover, 
 .navbar-default .navbar-nav > .open > a:focus {
-color: #ccbdd6;
-background-color: #b054d6;
-background-image: none;
+	color:			#ccbdd6;
+	background-color:	#b054d6;
+	background-image:	none;
 }
 
 .navbar-default .navbar-toggle {
-border-color: #b054d6;
+	border-color:		#b054d6;
 }
 
 .navbar-default .navbar-toggle:hover, 
 .navbar-default .navbar-toggle:focus {
-background-color: #b054d6;
+	background-color:	#b054d6;
 }
 .navbar-default .navbar-toggle .icon-bar {
-background-color: #f3e1ff;
+	background-color:	#f3e1ff;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-border-color: #f3e1ff;
+	border-color:		#f3e1ff;
 }
 
 @media (max-width: 767px) {
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-color: #f3e1ff;
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color:		#f3e1ff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color:		#ccbdd6;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color:		#ccbdd6;
+		background-color: #b054d6;
+	}
 }
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-color: #ccbdd6;
-}
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-color: #ccbdd6;
-background-color: #b054d6;
-}
+
+.pull-right > li {
+	margin-right:		5px;
 }
 
+.pull-right > input {
+	margin-top:		10px;
+        margin-bottom:		5px;
+        margin-right:		5px;
+}
 
+.pull-left {
+	margin-left:		5px;
+}
 
-.pull-right> li{margin-right: 5px;
-				}
+.search-query {
+	border-radius:		6px;
+}
 
-.pull-right> input {margin-top:10px;
-                    margin-bottom:5px;
-                    margin-right:5px;}
-
-.pull-left {margin-left: 5px;}
-
-.search-query {border-radius: 6px;}
 /* BODY*/
 
-body {background-color: black;}
+body {
+	background-color:	black;
+}
 
-.scroll	{overflow: scroll; }
+.scroll	{
+	overflow:		scroll;
+}
 
 /*JUMBOTRON*/
-
-
