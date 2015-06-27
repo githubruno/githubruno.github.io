@@ -20,10 +20,10 @@
 	border-right:		1px solid #AA51CF;
 }*/
 
-/* border between menu elements */
+/* border between menu elements
 .navbar-default .navbar-nav > li > a {
 	border-left:		1px solid #AA51CF;
-}
+}*/
 
 .navbar-default .navbar-nav > li > a {
 	color:			#f3e1ff;
@@ -117,6 +117,9 @@
         margin-bottom:		5px;
         margin-right:		5px;
 }
+
+.pull-left {margin-left:5px;
+	   }
 
 .search-query {
 	border-radius:		6px;
