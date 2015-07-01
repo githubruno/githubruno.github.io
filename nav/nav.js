@@ -1,6 +1,6 @@
 var main=function(){
-	$('li').click(function(){
-		$('li').removeClass('active');
+	$('nav').find('li').click(function(){
+		$('nav').find('li').removeClass('active');
 		$(this).addClass('active');
 	});
 }
