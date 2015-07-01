@@ -156,13 +156,13 @@ background-color: transparent;
 }
 
 .pager {
-background-color:#cf63fc;
 color: #f3e1ff;
 border-color: #aa51cf;
 }
 
 .pager > li > a {
 color: #f3e1ff;
+background-color:#cf63fc;
 }
 
 .pager > li > a:hover, 
@@ -175,20 +175,14 @@ background-color: transparent;
 .pager > .active > a:hover, 
 .pager > .active > a:focus {
 color: #ccbdd6;
-background-color: transparent;
-}
-
-.pager > .open > a, 
-.pager > .open > a:hover, 
-.pager > .open > a:focus {
-color: #ccbdd6;
-background-color: transparent;
+background-color: #b056d6;
 }
 
 .pagination.pagination-lg {
 background-color:#cf63fc;
 color: #f3e1ff;
 }
+
 /* BODY*/
 
 body {  padding-top: 50px;
