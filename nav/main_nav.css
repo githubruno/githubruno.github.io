@@ -133,6 +133,7 @@ color: #f3e1ff;
 
 .breadcrumb > li > a {
 color: #f3e1ff;
+background-image;none;
 }
 
 .breadcrumb > li > a:hover, 
@@ -158,6 +159,7 @@ background-color: transparent;
 .pager,
 .pager.disabled {
 color: #f3e1ff;
+background-image: none;
 }
 
 .pager > li,
