@@ -155,15 +155,18 @@ color: #ccbdd6;
 background-color: transparent;
 }
 
-.pager {
+.pager,
+.pager.disabled {
 color: #f3e1ff;
-border-color: #aa51cf;
 }
 
 .pager > li,
-.pager > li > a {
+.pager > li > a,
+.pager.disabled > li,
+.pager.disabled > li > a {
 color: #f3e1ff;
 background-color:#cf63fc;
+border-color: #aa51cf;
 }
 
 .pager > li > a:hover, 
@@ -180,7 +183,7 @@ background-color: #b056d6;
 }
 
 .pagination,
-.pagination.pagination-lg {
+.pagination.pagination-lg > li {
 background-color:#cf63fc;
 color: #f3e1ff;
 }
