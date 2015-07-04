@@ -1,229 +1,222 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Navigation</title>
-	<link href="reset.css" rel="stylesheet">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<link type="text/css" rel="stylesheet" href="main_nav.css">
-<!--	<script type="text/javascript">
-		$(	//
-			//	So, once all needed parts of the page are loaded, this function
-			//	would be called by browser:
-			//
-			function() {
-				// Let's find (and save into variable) all LIs inside #navbarCollapse
-				// excluding dividers (not that really needed but OTOH dividers can be
-				// hardly clicked anyways):
-				$all_LIs = $('#navbarCollapse li')	// this is all_LIsector for "all LIs"
-				.not('.divider-vertical')	// ...excluding dividers
-				.find('a')			// ...all A's
-				;
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Navigation</title>
+        <link href="reset.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="main_nav.css">
 
-				if (0 == $all_LIs.length) {
-					// Debuging: if no LIs were found, let's have an alert
-					// so we know that something went wrong. Wouldn't be needed
-					// when development is over, kept for now.
-					alert('0');
-				}
+<!-- <script type="text/javascript">
+$( //
+// So, once all needed parts of the page are loaded, this function
+// would be called by browser:
+//
+function() {
+// Let's find (and save into variable) all LIs inside #navbarCollapse
+// excluding dividers (not that really needed but OTOH dividers can be
+// hardly clicked anyways):
+$all_LIs = $('#navbarCollapse li') // this is all_LIsector for "all LIs"
+.not('.divider-vertical') // ...excluding dividers
+.find('a') // ...all A's
+;
+if (0 == $all_LIs.length) {
+// Debuging: if no LIs were found, let's have an alert
+// so we know that something went wrong. Wouldn't be needed
+// when development is over, kept for now.
+alert('0');
+}
+// For all previously all_LIsected objects set this function as
+// handler of "click" event:
+$all_LIs.on('click', function() {
+// Find all active LIs and remove active:
+$('#navbarCollapse li.active').removeClass('active');
+// For current "on-click" generating object (referred as "this")
+// find it's li-parent and add class "active" to it:
+$(this).parent('li').addClass('active');
+});
+}
+);
+</script>-->
+        
+        <script type="text/javascript" src="nav.js"></script>
+    </head>
 
-				// For all previously all_LIsected objects set this function as
-				// handler of "click" event:
-				$all_LIs.on('click', function() {
-					// Find all active LIs and remove active:
-					$('#navbarCollapse li.active').removeClass('active');
+    <body class="scroll">
+        <nav class="navbar navbar-default navbar-fixed-top">
 
-					// For current "on-click" generating object (referred as "this")
-					// find it's li-parent and add class "active" to it:
-					$(this).parent('li').addClass('active');
-				});
-			}
-		);
-	</script>-->
-	<script type="text/javascript" src="nav.js"></script>
-</head>
-<body class="scroll">
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<!-- part of menu which should stay out of toggling-->
-		<ul class="nav navbar-nav pull-right">
-			<li><a href="#"><span class="glyphicon glyphicon-user"></span>Войти</a></li>
-		</ul>
+            <!-- part of menu which should stay out of toggling-->
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Войти</a></li>
+            </ul>
 
-		<form class="navbar-search pull-right">
-			<input type="text" class="search-query" placeholder="Search">
-		</form>
+            <form class="navbar-search pull-right">
+                <input type="text" class="search-query" placeholder="Search">
+            </form>
 
-		<!-- Header part: stays on left side-->
-		<div class="navbar-header pull-left">
-			<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
+            <!-- Header part: stays on left side-->
+            <div class="navbar-header pull-left">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 
-		<!-- Collection of nav links and other content for toggling -->
-		<div id="navbarCollapse" class="collapse navbar-collapse">
-			<ul class="nav navbar-nav navbar-left">
-				<li class="active">
-					<a href="#">О нас</a>
-				</li>
-				<li class="divider-vertical"></li>
-				<li>
-					<a href="#">Статьи</a>
-				</li>
-				<li role="separator" class="divider-vertical"></li>
-				<li>
-					<a href="#">Заказать</a>
-				</li>
-				<li class="divider-vertical"></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-						Изделия<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li class="active">	<a href="#">Сумки</a>	</li>
-						<li class="divider">				</li>
-						<li>			<a href="#">Цветы</a>	</li>
-						<li class="divider">				</li>
-						<li>			<a href="#">Украшения</a></li>
-						<li class="divider">				</li>
-						<li>			<a href="#">Игрушки</a>	</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	
-	<div>
-		<h2>&nbsp;</h2>
-	</div>
-	
-	<nav class="navbar navbar-default"> <!--navigation tabs-->
-	<!--right part of menu, stays in mobile vesion-->
-		<ul class="nav navbar-nav pull-right">
-			<li><a href="#"><span class="glyphicon glyphicon-user"></span>Войти</a></li>
-		</ul>
 
-		<form class="navbar-search pull-right">
-			<input type="text" class="search-query" placeholder="Search">
-		</form>
-	
-		<!-- Header part: stays on left side-->
-		<div class="navbar-header pull-left">
-			<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
-		
-				<!-- Collection of nav links and other content for toggling -->
-		<div id="navbarCollapse" class="collapse navbar-collapse">
-			<ul class="nav nav-tabs">
-				<li class="active">
-					<a href="#">О нас</a>
-				</li>
-				<li class="divider-vertical"></li>
-				<li>
-					<a href="#">Статьи</a>
-				</li>
-				<li class="divider-vertical"></li>
-				<li>
-					<a href="#">Заказать</a>
-				</li>
-				<li class="divider-vertical"></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-						Изделия<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li class="active">	<a href="#">Сумки</a>	</li>
-						<li class="divider">				</li>
-						<li>			<a href="#">Цветы</a>	</li>
-						<li class="divider">				</li>
-						<li>			<a href="#">Украшения</a></li>
-						<li class="divider">				</li>
-						<li>			<a href="#">Игрушки</a>	</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	
-	<div>
-		<h2>&nbsp;</h2>
-	</div>
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li>
+                        <a href="#">Статьи</a>
+                    </li>
+                    <li role="separator" class="divider-vertical"></li>
+                    <li>
+                        <a href="#">Заказать</a>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Изделия<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"> <a href="#">Сумки</a> </li>
+                            <li class="divider"> </li>
+                            <li> <a href="#">Цветы</a> </li>
+                            <li class="divider"> </li>
+                            <li> <a href="#">Украшения</a></li>
+                            <li class="divider"> </li>
+                            <li> <a href="#">Игрушки</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-	<nav class="navbar navbar-default"> <!--navigation pills-->
-		<!--right part of menu, stays in mobile vesion-->
-		<ul class="nav navbar-nav pull-right">
-			<li><a href="#"><span class="glyphicon glyphicon-user"></span>Войти</a></li>
-		</ul>
+<div>
+<h2>&nbsp;</h2>
+</div>
 
-		<form class="navbar-search pull-right">
-			<input type="text" class="search-query" placeholder="Search">
-		</form>
-	
-		<!-- Header part: stays on left side-->
-		<div class="navbar-header pull-left">
-			<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
-		
-		<!-- Collection of nav links and other content for toggling -->
-		<div id="navbarCollapse" class="collapse navbar-collapse">
-			<ul class="nav nav-pills">
-				<li class="active">
-					<a href="#">О нас</a>
-				</li>
-				<li class="divider-vertical"></li>
-				<li>
-					<a href="#">Статьи</a>
-				</li>
-				<li class="divider-vertical"></li>
-				<li>
-					<a href="#">Заказать</a>
-				</li>
-				<li class="divider-vertical"></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-						Изделия<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li class="active">	<a href="#">Сумки</a>	</li>
-						<li class="divider">				</li>
-						<li>			<a href="#">Цветы</a>	</li>
-						<li class="divider">				</li>
-						<li>			<a href="#">Украшения</a></li>
-						<li class="divider">				</li>
-						<li>			<a href="#">Игрушки</a>	</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</nav>
+        <nav class="navbar navbar-default"> <!--navigation tabs-->
 
-	<div>
-		<h2>&nbsp;</h2>
-	</div>
-	
-	<!--Breadcrubms-->
+            <!--right part of menu, stays in mobile vesion-->
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Войти</a></li>
+            </ul>
+            
+            <form class="navbar-search pull-right">
+                <input type="text" class="search-query" placeholder="Search">
+            </form>
+            
+            <!-- Header part: stays on left side-->
+            <div class="navbar-header pull-left">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">О нас</a>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="#">Статьи</a>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="#">Заказать</a>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Изделия<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li class="active"> <a href="#">Сумки</a> </li>
+                        <li class="divider"> </li>
+                        <li> <a href="#">Цветы</a> </li>
+                        <li class="divider"> </li>
+                        <li> <a href="#">Украшения</a></li>
+                        <li class="divider"> </li>
+                        <li> <a href="#">Игрушки</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+<div>
+<h2>&nbsp;</h2>
+</div>
+
+    <nav class="navbar navbar-default"> <!--navigation pills-->
+
+        <!--right part of menu, stays in mobile vesion-->
+        <ul class="nav navbar-nav pull-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span>Войти</a></li>
+        </ul>
+
+        <form class="navbar-search pull-right">
+            <input type="text" class="search-query" placeholder="Search">
+        </form>
+
+        <!-- Header part: stays on left side-->
+        <div class="navbar-header pull-left">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">О нас</a>
+                </li>
+                <li class="divider-vertical"></li>
+                <li><a href="#">Статьи</a>
+                </li>
+                <li class="divider-vertical"></li>
+                <li><a href="#">Заказать</a>
+                </li>
+                <li class="divider-vertical"></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Изделия<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"> <a href="#">Сумки</a> </li>
+                        <li class="divider"> </li>
+                        <li> <a href="#">Цветы</a> </li>
+                        <li class="divider"> </li>
+                        <li> <a href="#">Украшения</a></li>
+                        <li class="divider"> </li>
+                        <li> <a href="#">Игрушки</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div>
+<h2>&nbsp;</h2>
+</div>
+
+        <!--Breadcrubms-->
         <ol class="breadcrumb">
             <li><a href="#">Cумки</a></li>
             <li><a href="#">Цветы</a></li>
@@ -231,59 +224,58 @@
             <li class="active">Игрушки</li>
         </ol>
         
-        <div>
-		<h2>&nbsp;</h2>
-	</div>
-	
+<div>
+<h2>&nbsp;</h2>
+</div>
+    
         <!--Pagination-->
         <nav>
-  		<ul class="pagination pagination-lg"> <!--size of pagination can be changes by using -lg, -sm, medium by default -->
-    			<li class="disabled">
-    				<a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span>
-      				</a>
-    			</li>
-    			<li class="active"><a href="#">1</a></li>
-    			<li><a href="#">2</a></li>
-    			<li><a href="#">3</a></li>
-    			<li><a href="#">4</a></li>
-    			<li><a href="#">5</a></li>
-    			<li>
-      				<a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span>
-      				</a>
-    			</li>
-  		</ul>
-	</nav>
-	
-	<div>
-		<h2>&nbsp;</h2>
-	</div>
-	
-	<!--Pager in middle-->
-	<nav>
-  		<ul class="pager">
-    			<li class="disabled"><a href="#">Previous</a></li>
-    			<li><a href="#">Next</a></li>
-  		</ul>
-	</nav>
-	
-	<div>
-		<h2>&nbsp;</h2>
-	</div>
+            <ul class="pagination pagination-lg"> <!--size of pagination can be changes by using -lg, -sm, medium by default -->
+                <li class="disabled">
+                <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                <a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+            </ul>
+        </nav>
+    
+<div>
+<h2>&nbsp;</h2>
+</div>
 
-	<!--Pager on sides-->
-	<nav>
-		<ul class="pager">
-			<li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span>Previous</a></li>
-			<li class="next"><a href="#">Next<span aria-hidden="true">&rarr;</span></a></li>
-		</ul>
-	</nav>
-	
-	
-	<div class="details">
-		<h2>&nbsp;</h2>
-		<h2>More information</h2>
-		<h2>&nbsp;</h2>
-	</div>
-	
-</body>
-</html>  
+        <!--Pager in middle-->
+        <nav>
+            <ul class="pager">
+                <li class="disabled"><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+        </nav>
+
+<div>
+<h2>&nbsp;</h2>
+</div>
+
+        <!--Pager on sides-->
+        <nav>
+            <ul class="pager">
+                <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span>Previous</a></li>
+                <li class="next"><a href="#">Next<span aria-hidden="true">&rarr;</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="details">
+        <h2>&nbsp;</h2>
+        <h2>More information</h2>
+        <h2>&nbsp;</h2>
+        </div>
+    
+    </body>
+</html>
