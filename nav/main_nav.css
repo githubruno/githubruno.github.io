@@ -139,14 +139,14 @@ border-color: #71368A;
 
 .navbar-default .nav-tabs > li > a {
 color: #f3e1ff;
-background-color: transparent;
+background-color: #cf63fc;
 }
 
-.navbar-default. nav-tabs > li > a:hover,
+.navbar-default .nav-tabs > li > a:hover,
 .navbar-default .nav-tabs > li > a:focus {
+background-color: #cf63fc;
 border-color: #71368A;
 color: #ccbdd6;
-background-color: transparent;
 }
 
 .navbar-default .nav-tabs > li > .dropdown-menu {
@@ -195,20 +195,20 @@ background-image: none;
 
 /*NAV PILLS*/
 
-.nav-pills {
-border-color: #71368A;  
+.nav-pills > li > a {
+border: 1px;  
 }
 
 .navbar-default .nav-pills > li > a {
 color: #f3e1ff;
-background-color: transparent;
+background-color: #cf63fc;
 }
 
-.navbar-default. nav-pills > li > a:hover,
+.navbar-default .nav-pills > li > a:hover,
 .navbar-default .nav-pills > li > a:focus {
+background-color: #cf63fc;
 border-color: #71368A;
 color: #ccbdd6;
-background-color: transparent;
 }
 
 .navbar-default .nav-pills > li > .dropdown-menu {
@@ -252,6 +252,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc35ded', en
 color: #ccbdd6;
 background-color: #b054d6;
 background-image: none;
+border-color: #71368A;
 }
 
 /*BREADCRUMS*/
@@ -289,22 +290,21 @@ background-image: none;
 border-color: #aa51cf;
 }
 
-.pagination. > li > a:hover,
-.pagination. > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > a:focus,
 .pagination > li > span:hover,
-.pagination > li > span:focus, {
+.pagination > li > span:focus {
 color: #ccbdd6;
 background-color: #cf63fc;
-background-image: none;
 border-color: #aa51cf;
 }
 
-.pagination >.active > a, 
-.pagination >.active > a:focus, 
-.pagination >.active > a:hover, 
-.pagination >.active > span, 
-.pagination >.active > span:focus, 
-.pagination >.active > span:hover {
+.pagination > .active > a, 
+.pagination > .active > a:focus, 
+.pagination > .active > a:hover, 
+.pagination > .active > span, 
+.pagination > .active > span:focus, 
+.pagination > .active > span:hover {
 z-index: 2;
 color: #ccbdd6;
 background-color: #b054d6;
