@@ -1,17 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Roboto+Slab:400,100,300,700);
+
 body {
     padding-top:50px;  
     background-color: #333;  
     color: #f3e1ff;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 2em;
 }
 
 /*NAVBAR STYLE*/
 .navbar-default {
 background-color: #cf63fc;
-/*background-image: none;
-background-repeat: no-repeat;
-*/
 border-color: #AA51CF;
-border-radius: 4px;
+border-radius: 0px;
 background-image: -webkit-gradient(linear, left 0%, left 100%, from(#c35ded), to(#cf63fc));
 background-image: -webkit-linear-gradient(top, #c35ded, 0%, #cf63fc, 100%);
 background-image: -moz-linear-gradient(top, #c35ded 0%, #cf63fc 100%);
@@ -122,9 +124,24 @@ background-color: #b054d6;
 }
 }
 
+.navbar-brand {
+    font-size: 22px;
+} 
+
+.navbar-collapse .navbar-nav {
+    font-size: 22px;
+}
+
 /*END OF NAVBAR STYLE*/
 
+.line {
+    border-top: 2px solid;
+    border-top-color:grey;
+}
 
+footer .container-fluid {
+    margin-top: 15px;
+}
 
 footer .navbar-default {
     background-color: transparent;
@@ -137,3 +154,10 @@ footer .navbar {
     border: 0;
 }
 
+footer .col-sm-6 > p {
+    font-size: 12px;
+}
+
+footer .col-sm-6 > a {
+    font-size: 12px;   
+}
