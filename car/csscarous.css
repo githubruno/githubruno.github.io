@@ -134,6 +134,14 @@ background-color: #b054d6;
 
 /*END OF NAVBAR STYLE*/
 
+#items {
+    background-color: grey;
+}
+
+#gallery {
+    background-color: grey;
+}
+
 .line {
     border-top: 2px solid;
     border-top-color:grey;
