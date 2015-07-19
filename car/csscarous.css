@@ -192,6 +192,10 @@ header .navbar-brand {
 
 .col-sm-6, .col-md-6, .col-lg-6 {
 	padding-top: 15px;
+<<<<<<< HEAD
+=======
+	padding-bottom: 15px;
+>>>>>>> origin/master
 }
 
 .col-xs-9, .col-sm-9, .col-md-8, .col-lg-8 {
@@ -231,6 +235,7 @@ header .navbar-brand {
 
 .description .intro:after {
 	content:"...";
+<<<<<<< HEAD
 }
 
 .description .more {
@@ -317,6 +322,94 @@ header .navbar-brand {
     box-shadow: white 1px 1px 1px;
 }
 
+=======
+}
+
+.description .more {
+	font-size: 0em;
+	line-height: 0;
+	opacity: 0;
+}
+
+.description .quote:hover .more {
+	font-size: 1em;
+	line-height: 1;
+	opacity: 1;
+}
+
+.description .quote:hover .intro:after {
+	content:"";
+}
+
+@media (max-width: 860px) and
+(min-width: 768px) {
+	.col-sm-6, .col-md-6, .col-lg-6 {
+		padding-top: 30px;
+		padding-bottom: 20px;
+		padding-left:5px;
+		padding-right: 5px;
+}
+}
+
+
+@media (max-width: 500px) {
+	.description .intro {
+		font-size: 0.9em;
+		font-height: 98%;
+	  }
+}
+
+/*END OF ITEMS*/
+
+/*ORDER*/
+
+#order {
+	background: url('img/order2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: center center;
+}
+
+#order .container-fluid {
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+#order .container-fluid .row {
+	background:rgba(26, 26, 26, 0.5);
+	/*position: relative;
+	min-height: 180px;
+	margin: 0;
+	padding: 0 px;*/
+}
+
+#order .container-fluid .row .col-sm-4 {
+	vertical-align: middle;
+/*	position: absolute;
+	bottom: 5%; */
+}
+
+
+#order .container-fluid .row .col-sm-4 > h1,
+#order .container-fluid .row .col-sm-4 .h1,
+#order .container-fluid .row .col-sm-4> ul, 
+#order .container-fluid .row .col-sm-4> p,
+#order .container-fluid .row .col-sm-4 .inside .inside-full-height > p {
+	color:#fff;
+	margin-top: 20px;
+}
+
+#order .container-fluid .row .col-sm-4 > ul {
+	list-style-position: insides;
+}
+
+/*END OF ORDER*/
+#gallery  {
+    background: rgba(207, 99, 252, 0.3);
+    box-shadow: white 1px 1px 1px;
+}
+
+>>>>>>> origin/master
 #order    {
     box-shadow: white 1px 1px 1px;
 }
@@ -368,4 +461,8 @@ footer .col-sm-6 > p {
 
 footer .col-sm-6 > a {
     font-size: 20px;   
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
