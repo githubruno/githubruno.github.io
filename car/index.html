@@ -9,10 +9,11 @@
     <title>Carousel</title>
         
         <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
     <link type="text/css" rel="stylesheet" href="csscarous.css">
+    <script src="js/prefixfree.min.js"></script>
             
   </head>
   
@@ -23,7 +24,7 @@
       <div class="container">
 
         <div class="navbar-header">
-          <a class="navbar-brand" href="#soulmade"><strong>SoulMade</strong></a>
+          <a class="navbar-brand" href="#soulmade"><h1><strong>SoulMade</strong><span class="subhead">&nbsp;&nbsp;CREATIVE GROUP</span></h1></a>
           <div class="pull-right">
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
               <span class="sr-only">Toggle navigation</span>
@@ -37,13 +38,13 @@
         <div id="navbarCollapse" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Items</strong><span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Wares</strong><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li> <a href="#items"><strong>Bags</strong></a> </li>
                   <li class="divider"> </li>
                   <li> <a href="#items"><strong>Flowers</strong></a> </li>
                   <li class="divider"> </li>
-                  <li> <a href="#items"><strong>Jewelry</strong></a></li>
+                  <li> <a href="#items"><strong>Jewellery</strong></a></li>
                   <li class="divider"> </li>
                   <li> <a href="#items"><strong>Toys</strong></a> </li>
                 </ul><!--dropdown-->
@@ -62,9 +63,9 @@
     </nav>
 
     <div class="carousel slide" data-ride="carousel" id="imagelist"><!--#FEATURED WAS REPLACED WITH #IMAGELIST-->
-      <div class="carousel-inner">
+      <div id="home" class="carousel-inner">
         <div class="item active"><img src="img/car-general.jpg" alt="Made by hands with soul"></div>
-        <div class="item"><img src="img/car-jew1.jpeg" alt="Jewelry"></div>
+        <div class="item"><img src="img/car-jew1.jpeg" alt="Jewellery"></div>
         <div class="item"><img src="img/car-flowers.jpg" alt="Flowers"></div>
         <div class="item"><img src="img/car-bags.jpg" alt="Bags"></div>
         <div class="item"><img src="img/car-decor.jpg" alt="Decor"></div>      
@@ -79,47 +80,120 @@
   </div><!-- featured carousel -->
 </header>
 
-<div id="soulmade" class="container">
-  <h1>SoulMade Creativ Group</h1>
-  <p>We are few peole who are creative and love handmade. In all our creaations we put our soul. The power of 
-    soul is the greatest one. That is why all our ites are unique, create a good mood, make you happy and your home cozy. </p>
+<div id="soulmade">
+  <div class="container">
+    <h1>SoulMade Creativ Group</h1>
+		<div class="row">
+			
+			<div class="col-lg-5">
+				<span>We are few people who are creative and love handmade. We do many different things: toys, bags, accessories, 
+				some items for home decoration. All what we do we do with our soul. </span>
+			</div <!--col-lg-5-->
+			
+			<div class="col-lg-5 col-lg-offset-2">	
+				<span>The power of soul is the greatest one. It can make us feel better and warmer even in a nasty day.  That is why all our items 
+				are unique, create a good mood, make you happy and your home cozy. </span>
+			</div <!--col-lg-5-->
+
+		</div ><!--row-->
+  </div><!--container-->    
 </div><!--soulmade-->
 
 <div id="items">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-6">
-        <h1>Jewelry</h1>
-        <p>Handmade jewelry always are unique. They show your personality and your mood. You can look 
-          different every day.</p>
-      </div><!--col-sm-6-->
+      
+	  <div class="col-sm-6 col-md-6 col-lg-6">
+		<div class="row">
+			<div class="image col-xs-3 col-sm-3 col-md-4 col-lg-4">
+				<img src=" img/jew1.jpg" class="img-responsive"/>
+			</div> <!--description col-sm-4-->
+			
+			<div class="description col-xs-9 col-sm-9 col-md-8 col-lg-8">
+				<div class="quote">
+					<span class="intro">Handmade jewellery is always unique. </span>
+					<div  class="more"><span>They show your personality and your mood. You can look 
+				  different every day. For our creations we use beads, stones, shells, satin ribbons, ropes made from natural materials, textile and endless imagination.</span></div>
+				</div><!--quote-->
+			</div><!--col8-->
+		</div> <!--inner row-->
+	  </div><!--col-sm-6-->
 
-      <div class="col-sm-6">
-        <h1>Flowers</h1>
-        <p>The beauty of real flowers incarnate in fabric. They are environment frendly and will please you
-          day by day. As long as they stay with you.</p>
-      </div><!--col-sm-6-->
+	<div class="col-sm-6 col-md-6 col-lg-6">
+        <div class="row">
+			<div class="image col-xs-3 col-sm-3 col-md-4 col-lg-4">
+				<img src=" img/toys.jpg" class="img-responsive"/>
+			</div> <!--description col-sm-4-->
+			
+			<div class="description col-xs-9 col-sm-9 col-md-8 col-lg-8">
+				<div class="quote">
+					<span class="intro">They can make not only children happy. </span>
+					<span class="more">This toys will be a nice decoration for your interior. They can be a good friends for your kids. With them any house will turn to a cozy home with warm atmosphere and good mood. </span>
+				</div>
+			</div ><!--description-->
+		</div> <!--inner row-->
+	</div><!--col-sm-6-->	  
+	  
+	<div class="col-sm-6 col-md-6 col-lg-6">
+		<div class="row">
+			<div class="image col-xs-3 col-sm-3 col-md-4 col-lg-4">
+				<img src=" img/daisy-flower-9.jpg" class="img-responsive"/>
+			</div> <!--description col-sm-4-->
+			
+			<div class="description col-xs-9 col-sm-9 col-md-8 col-lg-8">
+				<div class="quote">
+					<span class="intro">The beauty of real flowers incarnate in fabric. </span>
+					<span class="more">Our flowers are environment friendly and will please you
+				  day by day. As long as they stay with you. This flowers are available in different colours and textures. They can be made as decoration items,  hair bands, bracelets etc. </span>
+				</div>	
+			</div><!--description-->
+		</div> <!--inner row-->
+	</div><!--col-sm-6-->
 
-      <div class="col-sm-6">
-        <h1>Bags</h1>
-        <p>Handmade bags have personal design, are single copy only. Een in a huge city you will be onle
-          one who has this bag.</p>
-      </div><!--col-sm-6-->
-
-      <div class="col-sm-6">
-        <h1>Toys</h1>
-        <p>They can make not only children happy. This toys will be a nice decoration for your interrior
-          and will make your house a cozy home.</p>
-      </div><!--col-sm-6-->
-    </div><!-row-->
+	<div class="col-sm-6 col-md-6 col-lg-6">
+		<div class="row">
+			<div class="image col-xs-3 col-sm-3 col-md-4 col-lg-4">
+				<img src=" img/bags1.jpg" class="img-responsive"/>
+			</div> <!--description col-sm-4-->
+			
+			<div class="description col-xs-9 col-sm-9 col-md-8 col-lg-8">
+				<div class="quote">
+					<span class="intro">Handmade bags have personal design, are single copy only. </span>
+					<span class="more"> Even in a huge city you will be the only one who has this bag. Small purses, big beach bags, decorated with flowers or painted pictures. Everyone can fin something fitting perfect for your style. </span>
+				</div>
+			</div ><!--description-->
+		</div> <!--inner row-->
+	</div><!--col-sm-6-->
+       
+	</div><!--row-->
   </div><!--container items-->
 </div><!--items-->
 
-<div id="order" class="container">
-  <h1>How to make an order?</h1>
-  <p>You liked something and you want to make an order. It's very simple. Just send us an e-mail with a 
-    code of item you liked. If you have some comments or you want to add/change some details describe them
-    in you message. We will contact you immediately. Don't forget to put your posr address! </p>
+<div id="order">
+  <div class="container-fluid">
+	<div  class="row">
+		
+		<div class="col-sm-4 text-center">
+			<h1><strong>How to make on order ?</strong></h1>
+			<h1><strong>It's very easy !</strong></h1>
+		</div <!--col-sm-4-->
+		
+		<div class="col-sm-4 text-center">
+			<p>Send us e-mail with information listed below:</p>
+				<ul>
+					<li>code of item you liked</li>
+					<li>details you want to customise</li>
+					<li>your post address and contacts</li>
+					<li>preferable payment method</li>
+				</ul>
+		</div <!--col-sm-4-->
+		
+		<div class="col-sm-4 text-center">
+			<p>We will contact you immediately and you will be able to enjoy your purchase very soon.</p>
+		</div <!--col-sm-4-->
+		
+	</div > <!--row-->
+  </div><!--container-->
 </div><!--order-->
 
 <div id="gallery">
@@ -153,36 +227,31 @@
   </div><!--container-->  
 </div><!--gallery-->
 
-<div class="line">
-</div>
-
 <footer>
-      <div class="content container-fluid">
+    <div class="content container-fluid">
         <div class="row">
 
-          <div class="col-sm-6">
-              <p>SoulMade CreativeGroup</p>
-              <p><span class="glyphicon glyphicon-envelope"></span>&nbsp;: for.soulmade@gmail.com</p>
-          </div>
+			<div class="col-sm-6">
+				<p>SoulMade CreativeGroup</p>
+				<p><span class="glyphicon glyphicon-envelope"></span>&nbsp;: for.soulmade@gmail.com</p>
+			</div>
 
-          <div class="col-sm-6">
-            <nav class="navbar navbar-default" role="navigation">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Join us</a></li>
-                <li><a href="#">Privacy policy</a></li>
-              </ul>
-        </nav>        
-               
-          </div>
+			<div class="col-sm-6">
+				<nav class="navbar navbar-default" role="navigation">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+				  </ul>
+				</nav>        
+			</div>
 
-        </div>                    
-      </div>                      
+        </div>  <!--row-->                  
+     </div> <!--container-fluid-->                     
  </footer>  
 
           <!-- jQuery and JS Bootstrap, custom JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="jscarous.js"></script>
+    <script src="../bootstrap/js/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jscarous.js"></script>
     
   </body>
 
